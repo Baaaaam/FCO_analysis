@@ -7,8 +7,11 @@ CO_R2_F2 PWR_cooling
 WR_R2_F2 PWR_storage
 
 ST PWR_storage_Upu,blanket_Upu_limited_storage
+ST_RU PWR_storage_Upu
+ST_PU PWR_storage_Upu
+ST_MA blanket_Upu_limited_storage
+ST_DU blanket_Upu_limited_storage
 WT waste
-
 
 #CO_R1_F1
 #CO_R3_F3
