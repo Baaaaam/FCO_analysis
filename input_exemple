@@ -1,15 +1,19 @@
 RE2 NA:PWR F2:PWR_MOX_new LT:960y CA:0.9 PO:1
+RE3 NA:FBR_driver F3:FBR_driver_MOX_new,FBR_blanket_new LT:960y CA:0.9 PO:0.4
 
 RP_R2_F2 NA:PWR_separation CO:PWR_MOX_spent_stored
+RP_R3_F3 NA:FBR_driver_separation,FBR_blanket_separation CO:FBR_driver_MOX_stored,FBR_blanket_stored
 
 CO_R2_F2 PWR_cooling
+CO_R3_F3 FBR_driver_MOX_cooling,FBR_blanket_cooling
 
 WR_R2_F2 PWR_storage
+WR_R3_F3 FBR_driver_MOX_storage,FBR_blanket_storage
 
-ST PWR_storage_Upu,blanket_Upu_limited_storage
-ST_RU PWR_storage_Upu
-ST_PU PWR_storage_Upu
-ST_MA blanket_Upu_limited_storage
+ST Storage_J1_prime,Storage_E1_prime,Storage_E2_prime,Storage_E3_prime,Storage_E4,Storage_J1_second,Storage_E1_second,Storage_E2_second,Storage_E3_second
+ST_RU Storage_E4
+ST_PU Storage_J1_prime,Storage_E1_prime,Storage_E2_prime,Storage_J1_second,Storage_E1_second,Storage_E2_second
+ST_MA Storage_E3_prime,Storage_E3_second
 ST_DU blanket_Upu_limited_storage
 WT waste
 
